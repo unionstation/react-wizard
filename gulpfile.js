@@ -10,7 +10,6 @@ gulp.task('release', function() {
         .pipe(gulp.dest('lib'));
 });
 
-
 gulp.task('bundleSimple', function(cb) {
   webpack({
     target: 'web',

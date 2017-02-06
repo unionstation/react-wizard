@@ -10,5 +10,5 @@ module.exports = {
     render: function(){
       return React.createElement('h4', null, 'Ever onward');
     }
-  })
+  )
 };

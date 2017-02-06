@@ -2,9 +2,12 @@
   "name": "react-wizard",
   "version": "0.3.4",
   "description": "React Wizard / Step component",
-  "main": "lib/Wizard.js",
+  "main": "./lib/wizard.js",
+  "module": "./src/wizard.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,19 +20,33 @@
     "step"
   ],
   "author": "Jacob Rosenthal",
+  "contributors": [
+    {
+      "name": "Matt Roman",
+      "email": "romanmt@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jacobrosenthal/react-wizard/issues"
   },
   "homepage": "https://github.com/jacobrosenthal/react-wizard",
   "dependencies": {
-    "react": "^0.12.2",
-    "react-bootstrap": "^0.13.2"
+    "babel-runtime": "^7.22.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.8.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
     "gulp": "^3.8.10",
     "gulp-react": "^2.0.0",
     "node-http-server": "^2.0.0",
-    "webpack": "^1.5.3"
+    "webpack": "^2.2.1"
   }
 }
