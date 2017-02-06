@@ -46,7 +46,7 @@ class Step extends Component {
     if(!this.props.lastStep) {
       AdvanceButton = <Button onClick={this.onSubmit} 
                               disabled={this.state.advanceDisabled}
-                              bsStyle='primary'>Onward
+                              bsStyle='primary'>Next &gt;
                       </Button>
     }
 
@@ -54,7 +54,7 @@ class Step extends Component {
     if(!this.props.lastStep) {
       RetreatButton = <Button onClick={this.onBack} 
                               disabled={this.props.firstStep || 
-                                        this.state.retreatDisabled}>back
+                                        this.state.retreatDisabled}>Back
                       </Button>
     }
 
