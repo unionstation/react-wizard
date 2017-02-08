@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/jacobrosenthal/react-wizard",
   "dependencies": {
-    "babel-runtime": "^7.22.0",
+    "babel-runtime": "^6.22.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2"
